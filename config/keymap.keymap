@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -7,9 +6,24 @@
     combos {
         compatible = "zmk,combos";
 
-        bt_clear {
-            bindings = <&bt BT_CLR>;
-            key-positions = <28 29>;
+        desktop_left {
+            bindings = <&kp LC(LEFT)>;
+            key-positions = <54 33>;
+        };
+
+        desktop_right {
+            bindings = <&kp LC(RIGHT)>;
+            key-positions = <54 35>;
+        };
+
+        mission_control {
+            bindings = <&kp LC(UP_ARROW)>;
+            key-positions = <54 20>;
+        };
+
+        show_windows {
+            bindings = <&kp LC(DOWN_ARROW)>;
+            key-positions = <54 34>;
         };
     };
 
