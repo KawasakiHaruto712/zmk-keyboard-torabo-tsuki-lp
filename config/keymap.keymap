@@ -24,8 +24,8 @@
             bindings = <
 &none  &none           &none             &none         &none                   &none                                        &none        &none  &none      &none     &none                  &none
 &none  &kp Q           &kp W             &kp E         &kp R                   &kp T                                        &kp Y        &kp U  &kp I      &kp O     &kp P                  &none
-&none  &kp A           &kp S             &kp D         &lt 4 F                 &kp G      &none             &none           &kp H        &kp J  &kp K      &kp L     &kp SEMI               &none
-&none  &kp Z           &kp X             &kp C         &kp V                   &kp B      &lt 1 LANGUAGE_2  &kp LANGUAGE_1  &kp N        &kp M  &kp COMMA  &kp DOT   &kp SLASH              &none
+&none  &kp A           &kp S             &kp D         &lt 1 F                 &kp G      &none             &none           &kp H        &kp J  &lt 4 K    &kp L     &kp SEMI               &none
+&none  &kp Z           &kp X             &kp C         &kp V                   &kp B      &kp LANGUAGE_2    &kp LANGUAGE_1  &kp N        &kp M  &kp COMMA  &kp DOT   &kp SLASH              &none
 &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &mt LALT TAB  &mt LEFT_COMMAND SPACE  &mkp LCLK  &lt_mouse 3 RCLK  &kp BACKSPACE   &lt 2 ENTER  &none  &none      &kp RGUI  &mt RIGHT_SHIFT MINUS  &none
             >;
         };
