@@ -62,11 +62,11 @@
 
         mouse_scroll {
             bindings = <
-&none  &none   &none   &none   &none   &none                   &none   &none   &none   &none   &none   &none
-&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans  &none
+&none  &none   &none   &none   &none   &none                   &none   &none              &none   &none            &none   &none
+&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans             &trans  &trans           &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &kp RIGHT_COMMAND  &trans  &kp RIGHT_SHIFT  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans           &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none              &none   &trans           &trans  &none
             >;
         };
     };
