@@ -159,25 +159,3 @@
         power-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | NRF_GPIO_DRIVE_H1)>;
     };
 };
-
-#undef RC
-#include <input/processors/zmk-input-processor-keybind.dtsi>
-
-/ {
-    zip_ctrl_arrows: zip_ctrl_arrows {
-        compatible = "zmk,input-processor-keybind";
-        #input-processor-cells = <0>;
-        track_remainders;
-        bindings
-            = <&kp LC(LEFT)>
-            , <&kp LC(RIGHT)>
-            , <&kp LC(UP)>
-            , <&kp LC(DOWN)>
-            ;
-        mode = <1>;
-        tick = <5>;
-        tap-ms = <20>;
-        wait-ms = <150>;
-        threshold = <5>;
-    };
-};
