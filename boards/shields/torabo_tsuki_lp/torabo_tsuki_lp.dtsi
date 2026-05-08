@@ -177,7 +177,7 @@
         mode = <1>;
         tick = <5>;
         tap-ms = <20>;
-        wait-ms = <100>;
-        threshold = <3>;
+        wait-ms = <150>;
+        threshold = <5>;
     };
 };
