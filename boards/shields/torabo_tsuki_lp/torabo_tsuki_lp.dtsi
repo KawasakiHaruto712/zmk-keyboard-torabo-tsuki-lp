@@ -169,10 +169,10 @@
         #input-processor-cells = <0>;
         track_remainders;
         bindings
-            = <&kp LC(RIGHT)>
-            , <&kp LC(LEFT)>
-            , <&kp LC(DOWN)>
+            = <&kp LC(LEFT)>
+            , <&kp LC(RIGHT)>
             , <&kp LC(UP)>
+            , <&kp LC(DOWN)>
             ;
         mode = <1>;
         tick = <80>;
