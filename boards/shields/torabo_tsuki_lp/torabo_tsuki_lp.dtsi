@@ -175,8 +175,9 @@
             , <&kp LC(DOWN)>
             ;
         mode = <1>;
-        tick = <20>;
+        tick = <5>;
         tap-ms = <20>;
-        wait-ms = <10>;
+        wait-ms = <100>;
+        threshold = <3>;
     };
 };
