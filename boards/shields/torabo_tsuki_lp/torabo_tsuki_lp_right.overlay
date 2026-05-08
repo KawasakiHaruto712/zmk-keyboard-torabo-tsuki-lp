@@ -12,6 +12,11 @@
             , <&zip_ctrl_arrows>
             ;
     };
+
+    scroll {
+        layers = <4>;
+        input-processors = <&zip_xy_to_scroll_mapper>;
+    };
 };
 
 &size_s_transform {
