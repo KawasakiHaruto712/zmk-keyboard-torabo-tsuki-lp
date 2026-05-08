@@ -1,6 +1,5 @@
 #include <zephyr/dt-bindings/gpio/nordic-nrf-gpio.h>
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <input/processors/zmk-input-processor-keybind.dtsi>
 #include "torabo_tsuki_lp_layouts.dtsi"
 
 / {
@@ -88,22 +87,6 @@
         compatible = "zmk,cdc-acm-bootloader-trigger";
     };
 
-    zip_ctrl_arrows: zip_ctrl_arrows {
-        compatible = "zmk,input-processor-keybind";
-        #input-processor-cells = <0>;
-        track_remainders;
-        bindings
-            = <&kp LC(RIGHT)>
-            , <&kp LC(LEFT)>
-            , <&kp LC(DOWN)>
-            , <&kp LC(UP)>
-            ;
-        mode = <1>;
-        tick = <80>;
-        tap-ms = <20>;
-        wait-ms = <50>;
-    };
-
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
@@ -174,5 +157,26 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 19 GPIO_ACTIVE_LOW>;
         power-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | NRF_GPIO_DRIVE_H1)>;
+    };
+};
+
+#undef RC
+#include <input/processors/zmk-input-processor-keybind.dtsi>
+
+/ {
+    zip_ctrl_arrows: zip_ctrl_arrows {
+        compatible = "zmk,input-processor-keybind";
+        #input-processor-cells = <0>;
+        track_remainders;
+        bindings
+            = <&kp LC(RIGHT)>
+            , <&kp LC(LEFT)>
+            , <&kp LC(DOWN)>
+            , <&kp LC(UP)>
+            ;
+        mode = <1>;
+        tick = <80>;
+        tap-ms = <20>;
+        wait-ms = <50>;
     };
 };
