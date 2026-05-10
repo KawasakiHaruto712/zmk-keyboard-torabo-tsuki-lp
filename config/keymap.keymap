@@ -22,11 +22,11 @@
 
         layer_0 {
             bindings = <
-&none  &none               &none             &none     &none                   &none                                        &none        &none    &none      &none     &none                  &none
-&none  &kp Q               &kp W             &kp E     &kp R                   &kp T                                        &kp Y        &kp U    &kp I      &kp O     &kp P                  &none
-&none  &kp A               &kp S             &kp D     &lt 1 F                 &kp G      &none             &none           &kp H        &lt 4 J  &kp K      &kp L     &kp SEMI               &none
-&none  &kp Z               &kp X             &kp C     &kp V                   &kp B      &kp LANGUAGE_2    &kp LANGUAGE_1  &kp N        &kp M    &kp COMMA  &kp DOT   &kp SLASH              &none
-&none  &mt LEFT_SHIFT TAB  &kp LEFT_CONTROL  &kp LALT  &mt LEFT_COMMAND SPACE  &mkp LCLK  &lt_mouse 3 RCLK  &kp BACKSPACE   &lt 2 ENTER  &none    &none      &kp RGUI  &mt RIGHT_SHIFT MINUS  &none
+&none  &none               &none             &none     &none                   &none                                        &none        &none  &none      &none     &none                  &none
+&none  &kp Q               &kp W             &kp E     &kp R                   &kp T                                        &kp Y        &kp U  &kp I      &kp O     &kp P                  &none
+&none  &kp A               &kp S             &kp D     &lt 1 F                 &kp G      &none             &none           &kp H        &kp J  &kp K      &lt 4 L   &kp SEMI               &none
+&none  &kp Z               &kp X             &kp C     &kp V                   &kp B      &kp LANGUAGE_2    &kp LANGUAGE_1  &kp N        &kp M  &kp COMMA  &kp DOT   &kp SLASH              &none
+&none  &mt LEFT_SHIFT TAB  &kp LEFT_CONTROL  &kp LALT  &mt LEFT_COMMAND SPACE  &mkp LCLK  &lt_mouse 3 RCLK  &kp BACKSPACE   &lt 2 ENTER  &none  &none      &kp RGUI  &mt RIGHT_SHIFT MINUS  &none
             >;
         };
 
@@ -62,11 +62,11 @@
 
         mouse_scroll {
             bindings = <
-&none  &none   &none   &none   &none   &none                   &none   &none   &none            &none   &none              &none
-&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans           &trans  &trans             &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans  &kp RIGHT_SHIFT  &trans  &kp RIGHT_COMMAND  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans             &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none   &none            &trans  &trans             &none
+&none  &none   &none   &none   &none   &none                   &none   &none              &none            &none   &none   &none
+&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans             &trans           &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &kp RIGHT_COMMAND  &kp RIGHT_SHIFT  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans           &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none              &none            &trans  &trans  &none
             >;
         };
     };
